@@ -1,31 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NoteService } from '../note.service';
+import { ProductService } from '../product.service';
 
-import { Note } from '../note-model';
+import { Product } from '../product-model';
 
 import { Observable } from 'rxjs/Observable';
 
 @Component({
-  selector: 'notes-list',
-  templateUrl: './notes-list.component.html',
-  styleUrls: ['./notes-list.component.scss'],
+  selector: 'products-list',
+  templateUrl: './products-list.component.html',
+  styleUrls: ['./products-list.component.scss'],
 })
-export class NotesListComponent implements OnInit {
+export class ProductsListComponent implements OnInit {
 
-  notes: Observable<Note[]>;
-  content: string;
+  // notes: Observable<Note[]>;
+  // content: string;
 
-  constructor(private noteService: NoteService) { }
+  // constructor(private noteService: NoteService) { }
 
   ngOnInit() {
     // this.notes = this.noteService.getData()
-    this.notes = this.noteService.getSnapshot();
+
+
+    //this.notes = this.noteService.getSnapshot();
   }
 
-  createNote() {
-    this.noteService.create(this.content);
-    this.content = '';
-  }
+  // createNote() {
+  //   this.noteService.create(this.content);
+  //   this.content = '';
+  // }
 
 }
