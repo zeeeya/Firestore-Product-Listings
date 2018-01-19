@@ -1,6 +1,7 @@
-export interface Note {
-  content: string;
-  hearts: number;
+export interface Product {
   id?: string;
-  time: number;
+  title: string;
+  description: string;
+  price: string;
+  dateCreated: number;
 }
