@@ -16,4 +16,8 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class ProductService {
 
+  productCollection: AngularFirestoreCollection<Product>;
+  productDocument:   AngularFirestoreDocument<Product>;
+
+
 }

@@ -1,4 +1,19 @@
 <h1>List of Products </h1>
 <p>Here we are going to display our products</p>
+<form action="#">
+    <div class="form-group">
+      <label for="title">Product Name</label>
+      <input type="text" class="form-control" id="title" [(ngModel)]="product.title">
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input type="text" class="form-control" id="desc" [(ngModel)]="product.description">
+    </div>
+    <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="text" class="form-control" id="price" [(ngModel)]="product.price">
+      </div>
+    <button type="submit" class="btn btn-default">Add Product</button>
+  </form>
 
 
