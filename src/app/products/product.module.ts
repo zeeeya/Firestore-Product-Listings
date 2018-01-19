@@ -6,7 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 
 import { ProductService } from './product.service';
 
-import { ProductsListComponent } from './products-list/notes-list.component';
+import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -24,4 +24,4 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
   ],
   providers: [ProductService],
 })
-export class NotesModule { }
+export class ProductsModule { }
