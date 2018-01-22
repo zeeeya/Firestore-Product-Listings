@@ -1,0 +1,12 @@
+export const environment = {
+    production: true,
+    firebaseConfig: {
+       apiKey: "AIzaSyBT7Wrw-NQV7ERRnkCrIJwSdOxsGPUg2xw",
+    authDomain: "firestore-product-listings.firebaseapp.com",
+    databaseURL: "https://firestore-product-listings.firebaseio.com",
+    projectId: "firestore-product-listings",
+    storageBucket: "firestore-product-listings.appspot.com",
+    messagingSenderId: "380316206812"
+
+    }
+};
