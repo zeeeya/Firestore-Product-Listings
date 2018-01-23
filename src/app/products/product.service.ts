@@ -42,7 +42,7 @@ export class ProductService {
     return this.afs.doc<Product>(`products/${id}`);
   }
 
-  create(NewProduct) {
+  create(name: string, description: string, price: string) {
     const product = {
       name,
       description,

@@ -1,22 +1,21 @@
 <h1>List of Products </h1>
 <p>Here we are going to display our products</p>
-<form action="#">
+
     <div class="form-group">
-      <label for="title">Product Name</label>
-      <input [(ngModel)]="name" placeholder="Add product name" class="input">
+      <label for="name">Product Name</label> 
+      <input placeholder="Add product name" class="input" id="name" [(ngModel)]="name">
     </div>
     <div class="form-group">
       <label for="description">Description:</label>
-      <input [(ngModel)]="description" placeholder="Add product description" class="input">
+      <input placeholder="Add product description" class="input" id="description" [(ngModel)]="description">
     </div>
     <div class="form-group">
         <label for="price">Price:</label>
-        <input [(ngModel)]="price" placeholder="Add product price" class="input">
+        <input placeholder="Add product price" class="input" id="price" [(ngModel)]="price" >
       </div>
-   <button class="button is-success" (click)="createProduct()" [disabled]="name?.length < 2 || name?.length > 50 && [disabled]="description?.length < 5 || description?.length > 100">
+   <button class="button is-success" (click)="createProduct()" [disabled]="name?.length < 2 || name?.length > 50>
   Add Product
 </button>
-  </form>
 
   <hr>
 <div *ngFor="let product of products | async">
