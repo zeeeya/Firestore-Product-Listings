@@ -16,16 +16,9 @@ export class ProductDetailComponent {
 
   constructor(private productService: ProductService) { }
 
-  // addHeartToNote(val: number) {
-  //   if (this.note.id) {
-  //     this.noteService.updateNote(this.note.id, { hearts: val + 1 });
-  //   } else {
-  //     console.error('Note missing ID!');
-  //   }
-  // }
-
-  // deleteNote(id: string) {
-  //   this.noteService.deleteNote(id);
-  // }
+ 
+deleteProduct(id: string) {
+this.productService.deleteProduct(id);
+}
 
 }
