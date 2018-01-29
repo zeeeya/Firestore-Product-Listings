@@ -33,7 +33,7 @@ export class ProductService {
     return this.productsCollection.snapshotChanges().map((actions) => {
       return actions.map((a) => {
         const data = a.payload.doc.data() as Product;
-        return { id: a.payload.doc.id, name: data.name, description: data.description, price: data.price, time: data.time };
+        return { id: a.payload.doc.id, name:data.name, description:data.description, price:data.price, time: data.time };
       });
     });
   }

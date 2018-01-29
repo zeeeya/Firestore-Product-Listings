@@ -27,8 +27,8 @@ export class ProductsListComponent implements OnInit {
 
   createProduct() {
     this.productService.create(this.name, this.description, this.price);
-    this.name = '',
-    this.description = '',
+    this.name = '';
+    this.description = '';
     this.price = '';
    
   }
